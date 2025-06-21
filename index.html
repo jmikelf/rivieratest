@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Tactics - Old Prototype</title>
+
+    <link rel="stylesheet" href="/dist/old/style.css" />
+</head>
+<body>
+    <div id="game-container">
+        <div class="wave-display" id="wave-display">Wave: 1</div>
+            <div class="character-container">
+                <div id="player-character" class="character">Player
+                    <div class="character-text">Level: 4</div>
+                    <div class="character-text">HP: 600/1500</div>
+                    <div class="health-bar">
+                        <div class="health-fill" id="player-health"></div>
+                    </div>
+                    <div class="time-bar">
+                        <div class="time-fill" id="player-time"></div>
+                    </div>
+                    <div id="coin-display" style="color: var(--light); font-family: 'Icons'; font-size: 1.5rem;">
+                        0$
+                    </div>
+                    <div id="charge-display" style="color: var(--dark); font-family: 'Icons'; font-size: 28px;letter-spacing: -6px;">
+                        <span style="color: var(--accent);">mm</span><span style="color: var(--primary);">mm</span>
+                    </div>
+                    <div class="character-text">STATS:<span style="color: var(--light); font-family: 'Icons'; font-size: 1.5rem;">[[[[[</span></div>
+                    
+                </div>
+            </div>
+
+            <div class="enemies-container" id="enemies-container">
+                <!-- Enemies will be added here -->
+            </div>
+        <div class="battle-area">
+            
+        
+        <div class="battle-log" id="battle-log">
+            <div class="log-entry">Battle begins! Defeat all enemies to survive.</div>
+        </div>
+        </div>
+        
+            <h3>Select an Item</h3>
+        <div id="action-menu" class="action-menu">
+            <div class="item-grid" id="item-grid">
+                <!-- Items will be added here -->
+            </div>
+            <div id="sell-slot" class="item" style="width: 128px;height: 128px;margin-top: 20px; border: 8px dotted black;  text-align: center; padding: 10px;">
+                <div class="item-name" style="opacity: 1; color: var(--primary);">Arrastra aquí para vender </div> 
+                <div class="item-name" id="sell-value" style="opacity: 1; position: relative; bottom: 4px;"> 0&</div>    
+                
+            </div>
+            <button id="next-wave-btn" class="wave-button">Start Next Wave</button>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0;">
+
+            <button id="skip-turn-btn" class="wave-button" style="display: none;">⏭️ Pasar turno</button>
+        </div>
+        </div>
+        
+        
+    </div>
+
+<script src="/dist/old/script.js"></script>
+</body>
+</html>
